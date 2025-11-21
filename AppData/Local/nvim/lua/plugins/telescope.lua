@@ -7,9 +7,6 @@ return {
       dependencies = { 'nvim-lua/plenary.nvim',
       'nvim-tree/nvim-web-devicons'},
       config = function()
-
-          local builtin = require('telescope.builtin')
-          vim.keymap.set('n', '<leader>ff', function() builtin.find_files() end, {})
           require('telescope').setup{
               defaults = {
                   -- Default configuration for telescope goes here:

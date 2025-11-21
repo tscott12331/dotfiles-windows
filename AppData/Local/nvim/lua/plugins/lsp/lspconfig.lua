@@ -45,6 +45,9 @@ return {
             opts.desc = "Show documentation for what is under cursor"
             keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
+            opts.desc = "Rename identifier"
+            vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+
             opts.desc = "Restart LSP"
             keymap.set("n", "<leader>rs", "<cmd>LspRestart<CR>", opts)
         end

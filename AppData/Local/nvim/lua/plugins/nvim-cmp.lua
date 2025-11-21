@@ -11,7 +11,7 @@ return {
         "rafamadriz/friendly-snippets",
         "Jezda1337/nvim-html-css",
 		},
-	config = function() 
+	config = function()
 			local cmp = require("cmp")
             local luasnip = require("luasnip")
             require("luasnip.loaders.from_vscode").lazy_load()
@@ -28,7 +28,9 @@ return {
                     ["<C-k>"] = cmp.mapping.select_prev_item(),
                     ["<C-j>"] = cmp.mapping.select_next_item(),
                     ["<C-e>"] = cmp.mapping.abort(),
+
                     ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                    ["<tab>"] = cmp.mapping.confirm({ select = false }),
                 }),
 				sources = cmp.config.sources({
                     { name = "nvim_lsp_signature_help" },
