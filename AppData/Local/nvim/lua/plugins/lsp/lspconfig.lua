@@ -68,18 +68,12 @@ return {
             on_attach = on_attach,
         })
         vim.lsp.enable("cssls")
-        
+
         vim.lsp.config("rust_analyzer", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
         vim.lsp.enable("rust_analyzer")
-
-        vim.lsp.config("sqlls", {
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
-        vim.lsp.enable("sqlls")
 
         vim.lsp.config("ts_ls", {
             capabilities = capabilities,
@@ -145,5 +139,17 @@ return {
             },
         })
         vim.lsp.enable("roslyn")
+
+        vim.lsp.config("gopls", {
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+        vim.lsp.enable("gopls")
+
+        vim.lsp.config("luau_lsp", {
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+        vim.lsp.enable("luau_lsp")
     end
 }

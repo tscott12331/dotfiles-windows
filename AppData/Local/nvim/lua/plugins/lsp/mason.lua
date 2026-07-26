@@ -20,15 +20,16 @@ return {
 opts = {
     ensure_installed = {
         "lua_ls",
+        "luau_lsp",
         "rust_analyzer",
         "cssls",
         "svelte",
         "ts_ls",
-        "sqlls",
         "pyright",
         "clangd",
         "html",
         "tailwindcss",
+        "gopls",
     },
 
     automatic_enable = false,
